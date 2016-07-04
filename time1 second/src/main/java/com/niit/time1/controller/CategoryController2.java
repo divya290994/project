@@ -5,26 +5,36 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.niit.shop.model.category;
 import com.niit.shopbackend.DAO.categoryDAO;
-import com.niit.shopbackend.model.category;
 
 
 
 @Controller
 public class CategoryController2 {
-/*
-	@Autowired
-	private categoryDAO categoryDAO;
-	
 
-	@RequestMapping("/addCategory")
+	@Autowired
+	private categoryDAO categoryDao;
+	/*AnnotationConfigApplicationContext context;
+	
+	public CategoryController2()
+	{
+		context=new AnnotationConfigApplicationContext();
+		context.scan("com.niit.shopbackend.config");
+		context.refresh();
+		categoryDao=(categoryDAO) context.getBean("categoryDao");
+	}
+	*/
+
+	/*@RequestMapping("/addCategory")
 	public ModelAndView addCategory(@ModelAttribute category category) {
-		categoryDAO.saveOrUpdate(category);
+		categoryDao.saveOrUpdate(category);
 	  return new ModelAndView("/adminHome");
 	 }
 
@@ -36,7 +46,7 @@ public class CategoryController2 {
 
 		System.out.println("getAllCategories");
 		
-		List<category> categoryList = categoryDAO.list();
+		List<category> categoryList = categoryDao.list();
 		
 		ModelAndView mv = new ModelAndView("/categoryList");
 		mv.addObject("categoryList", categoryList);
@@ -49,15 +59,15 @@ public class CategoryController2 {
 	public ModelAndView updateCategory(@ModelAttribute("category") ArrayList<category> categories)
 	{
 		category c =categories.get(0);
-		categoryDAO.saveOrUpdate(c);
+		categoryDao.saveOrUpdate(c);
 		
 		System.out.println("updating category");
 		ModelAndView mv = new ModelAndView("/categoryList");
 		
-	    List<category> categoryList = categoryDAO.list();
+	    List<category> categoryList = categoryDao.list();
 		mv.addObject("categoryList", categoryList);
 		
 		return mv;
-	}
-*/
+	}*/
+
 }

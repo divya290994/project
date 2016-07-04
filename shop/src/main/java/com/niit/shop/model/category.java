@@ -1,10 +1,9 @@
-package com.niit.shopbackend.model;
+package com.niit.shop.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import com.niit.shopbackend.DAO.categoryDAO;
 
 @Entity
 @Table(name="CATEGORY")

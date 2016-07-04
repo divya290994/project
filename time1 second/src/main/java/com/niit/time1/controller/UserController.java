@@ -14,7 +14,7 @@ import com.niit.shopbackend.model.UserDetails;
 
 @Controller
 public class UserController {
-
+/*
    @Autowired
 	UserDAO userDAO;
     
@@ -46,5 +46,5 @@ public class UserController {
 	  return new ModelAndView("/adminHome");
 	 }
 
-
+*/
 }
