@@ -4,15 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<!-- <meta http-equiv="refresh" content="0; URL=./SomeController" /> -->
+<title>Shopping Cart</title>
 </head>
 <body>
-Hello ${name}
-
-${message}
-
-
-<a href="getAllCategories">  Get all categories</a>
-
+Welcome to shopping cart
+<br><br>
+Exist user ?  <a href="login.jsp">  Login here</a>  <br>
+New user ?  <a href="views/register.jsp">  Register here</a>
 </body>
 </html>

@@ -4,14 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>AdminHome</title>
+<title>Insert title here</title>
 </head>
 <body>
-<h4>Welcome Admin </h4> <br><br>
 
-Categories: <a href="getAllCategories"> Show </a> | <a href="views/addCategory.jsp"> Add</a>  <br>
-Suppliers : <a href="getAllSuppliers"> Show</a>  | <a href="views/addSupplier.jsp"> Add</a>  <br>
-Products : <a href="getAllProducts"> Show</a>  | <a href="views/addProduct.jsp"> Add</a>  <br>
+<h4>Welcome Admin, </h4> <br><br>
+
+<a href="categories"> Categories </a>  | <a href="suppliers"> Suppliers</a> |  <a href="products"> Products</a>   
 
 </body>
 </html>

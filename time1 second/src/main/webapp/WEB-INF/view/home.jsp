@@ -31,11 +31,12 @@
 <center>
 
 <a href="home" class="btn btn-default">Home</a>
-<a href="login" class="btn btn-default">Login</a>
+<a href="login0" class="btn btn-default">Login</a>
 <a href="Aboutus" class="btn btn-default">About us</a>
 <a href="signup" class="btn btn-default">Signup</a>
 <a href="brand" class="btn btn-default">Brand</a>
-<a href="index"></a>
+<a href="categoryList" class="btn btn-default">categoryList</a>
+<a href="getAllCategories"></a>
 
  
 
