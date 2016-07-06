@@ -37,7 +37,7 @@ public class logincontroller {
 	else
 	{
 		message="invalid credentials";
-		mv=new ModelAndView("login0");
+		mv=new ModelAndView("");
 	
 	}
    
@@ -63,13 +63,15 @@ public class logincontroller {
 	}
 	@RequestMapping("/login")
 	public String login() {
-		return "login0";
+		return "login";
 	}
 	
-	@RequestMapping("/categoryList")
+	@RequestMapping("/admin")
 	public String categoryList() {
-		return "categoryList";
+		return "admin";
 	}
+	
+	
 	
 
 }
