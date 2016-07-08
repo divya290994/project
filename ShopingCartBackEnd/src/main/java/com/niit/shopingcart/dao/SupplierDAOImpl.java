@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.niit.shopingcart.modal.Category;
+
 import com.niit.shopingcart.modal.Supplier;
 
 @Repository("supplierDAO")
@@ -79,7 +79,9 @@ public class SupplierDAOImpl implements SupplierDAO {
 		return null;
 	}
 
-	public List<Supplier> getAllCategories() {
+	
+
+	public List<Supplier> getAllSuppliers() {
 		// TODO Auto-generated method stub
 		return null;
 	}

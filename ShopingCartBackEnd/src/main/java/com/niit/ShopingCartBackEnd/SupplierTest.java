@@ -4,9 +4,8 @@ import java.util.List;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.niit.shopingcart.dao.CategoryDAO;
+
 import com.niit.shopingcart.dao.SupplierDAO;
-import com.niit.shopingcart.modal.Category;
 import com.niit.shopingcart.modal.Supplier;
 
 public class SupplierTest {

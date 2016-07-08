@@ -8,19 +8,22 @@ import javax.persistence.Table;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
-
-
 @Entity
-@Table(name="CATEGORY")
+@Table(name = "product")
 @Component
-public class Category {
+public class Product {
 
-	private String id;
+	@Id
+	private String  id;
 	private String name;
 	private String description;
+	private double price;
 	
-	@Id
-	@Column(name = "ID")
+	@Column(name = "category_id")
+	private String categoryID;
+	
+	@Column(name = "supplier_id")
+	private String supplierID;
 	public String getId() {
 		return id;
 	}
@@ -39,6 +42,26 @@ public class Category {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public String getCategoryID() {
+		return categoryID;
+	}
+	public void setCategoryID(String categoryID) {
+		this.categoryID = categoryID;
+	}
+	public String getSupplierID() {
+		return supplierID;
+	}
+	public void setSupplierID(String supplierID) {
+		this.supplierID = supplierID;
+	}
 	
 	
+	
+
 }

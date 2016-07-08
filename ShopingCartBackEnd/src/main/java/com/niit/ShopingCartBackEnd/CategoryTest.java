@@ -22,17 +22,13 @@ public class CategoryTest {
 	
 	CategoryDAO categoryDAO = (CategoryDAO)  context.getBean("categoryDAO");
 	
-/*	
+	
 	c.setId("TAB_003");
 	c.setName("Tablet");
 	c.setDescription("Tablet product");
 	
 	
 	categoryDAO.saveOrUpdate(c);
-	*/
-	
-	
-	
 	List<Category>  list =    categoryDAO.list();
 	
 	for(Category cat : list)

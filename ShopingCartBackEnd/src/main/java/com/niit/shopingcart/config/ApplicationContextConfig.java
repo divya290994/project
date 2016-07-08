@@ -17,10 +17,15 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.niit.shopingcart.dao.CategoryDAO;
 import com.niit.shopingcart.dao.CategoryDAOImpl;
+import com.niit.shopingcart.dao.ProductDAO;
+import com.niit.shopingcart.dao.ProductDAOImpl;
+import com.niit.shopingcart.dao.SupplierDAO;
+import com.niit.shopingcart.dao.SupplierDAOImpl;
 import com.niit.shopingcart.modal.Category;
-/*import com.niit.shopingcart.model.Product;
-import com.niit.shopingcart.model.Supplier;
-import com.niit.shopingcart.model.User;*/
+import com.niit.shopingcart.modal.Product;
+import com.niit.shopingcart.modal.Supplier;
+
+
 
 
 @Configuration
@@ -44,7 +49,8 @@ public class ApplicationContextConfig {
     
     private Properties getHibernateProperties() {
     	Properties properties = new Properties();
-    	properties.put("hibernate.hbm2ddl", "update");
+    	properties.put("hibernate.hbm2ddl.auto", "update");
+    	properties.put("hibernate.show_sql", true);
     	properties.put("hibernate.dialect", "org.hibernate.dialect.H2Dialect");
     	return properties;
     }
@@ -55,8 +61,9 @@ public class ApplicationContextConfig {
     	LocalSessionFactoryBuilder sessionBuilder = new LocalSessionFactoryBuilder(dataSource);
     	sessionBuilder.addProperties(getHibernateProperties());
     	sessionBuilder.addAnnotatedClasses(Category.class);
-    	
-    	return sessionBuilder.buildSessionFactory();
+    	sessionBuilder.addAnnotatedClasses(Supplier.class);
+    	sessionBuilder.addAnnotatedClasses(Product.class);
+    	    	return sessionBuilder.buildSessionFactory();
     }
 	@Autowired
 	@Bean(name = "transactionManager")
@@ -69,10 +76,25 @@ public class ApplicationContextConfig {
 	}
     
     @Autowired
-    @Bean(name = "categoryDao")
-    public CategoryDAO geCategorDao(SessionFactory sessionFactory) {
+    @Bean(name = "categoryDAO")
+    public CategoryDAO getCategoryDao(SessionFactory sessionFactory) {
     	return new CategoryDAOImpl(sessionFactory);
+    }
+    
+    
+    @Autowired
+    @Bean(name = "supplierDAO")
+    public SupplierDAO getSupplierDAO(SessionFactory sessionFactory) {
+    	return new SupplierDAOImpl(sessionFactory);
+    }
+    
+    @Autowired
+    @Bean(name = "productDAO")
+    public ProductDAO getProductDAO(SessionFactory sessionFactory) {
+    	return new ProductDAOImpl(sessionFactory);
+    }
+   
     }
 
 
-}
+

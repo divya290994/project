@@ -9,54 +9,55 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.niit.shopingcart.modal.Category;
 
-@Repository("categoryDAO")
-public class CategoryDAOImpl implements CategoryDAO {
+import com.niit.shopingcart.modal.Product;
+
+@Repository("productDAO")
+public class ProductDAOImpl implements ProductDAO {
 	
 
 	@Autowired
 	private SessionFactory sessionFactory;
 
 
-	public CategoryDAOImpl(SessionFactory sessionFactory) {
+	public ProductDAOImpl(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
 
 	@Transactional
-	public List<Category> list() {
+	public List<Product> list() {
 		
 		@SuppressWarnings("unchecked")
-		List<Category> listCategory = (List<Category>) 
+		List<Product> listProduct = (List<Product>) 
 		          sessionFactory.getCurrentSession()
-				.createCriteria(Category.class)
+				.createCriteria(Product.class)
 				.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 
-		return listCategory;
+		return listProduct;
 	}
 
 	@Transactional
-	public void saveOrUpdate(Category category) {
-		sessionFactory.getCurrentSession().saveOrUpdate(category);
+	public void saveOrUpdate(Product product) {
+		sessionFactory.getCurrentSession().saveOrUpdate(product);
 	}
 
 	@Transactional
 	public void delete(String id) {
-		Category CategoryToDelete = new Category();
-		CategoryToDelete.setId(id);
-		sessionFactory.getCurrentSession().delete(CategoryToDelete);
+		Product ProductToDelete = new Product();
+		ProductToDelete.setId(id);
+		sessionFactory.getCurrentSession().delete(ProductToDelete);
 	}
 
 	@Transactional
-	public Category get(String id) {
+	public Product get(String id) {
 		String hql = "from Category where id=" + "'"+ id +"'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		
 		@SuppressWarnings("unchecked")
-		List<Category> listCategory = (List<Category>) query.list();
+		List<Product> listProduct = (List<Product>) query.list();
 		
-		if (listCategory != null && !listCategory.isEmpty()) {
-			return listCategory.get(0);
+		if (listProduct != null && !listProduct.isEmpty()) {
+			return listProduct.get(0);
 		}
 		
 		return null;
@@ -64,21 +65,21 @@ public class CategoryDAOImpl implements CategoryDAO {
 	
 	
 	@Transactional
-	public Category getByName(String name) {
-		String hql = "from Category where name=" + "'"+ name +"'";
+	public Product getByName(String name) {
+		String hql = "from Product where name=" + "'"+ name +"'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		
 		@SuppressWarnings("unchecked")
-		List<Category> listCategory = (List<Category>) query.list();
+		List<Product> listProduct = (List<Product>) query.list();
 		
-		if (listCategory != null && !listCategory.isEmpty()) {
-			return listCategory.get(0);
+		if (listProduct != null && !listProduct.isEmpty()) {
+			return listProduct.get(0);
 		}
 		
 		return null;
 	}
 
-	public List<Category> getAllCategories() {
+	public List<Product> getAllProducts() {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -87,4 +88,3 @@ public class CategoryDAOImpl implements CategoryDAO {
 
 
 }
-

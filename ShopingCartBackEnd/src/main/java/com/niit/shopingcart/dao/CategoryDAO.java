@@ -1,6 +1,9 @@
 package com.niit.shopingcart.dao;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import org.springframework.stereotype.Repository;
 
 import com.niit.shopingcart.modal.Category;
 
