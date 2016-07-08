@@ -17,14 +17,14 @@
 </head>
 <body>
 
-<center><a href="home" class="btn btn-default">Home</a>
-<a href="login" class="btn btn-default">Login</a>
-<a href="Aboutus" class="btn btn-default">About us</a>
-<a href="signup" class="btn btn-default">Signup</a>
-<a href="brand" class="btn btn-default">Brand</a>
-<a href="cart" class="btn btn-default">cart</a> 
-<center><div class="container">
-  <h2>Registration</h2>
+<center> <a href=home  button type="button" class="btn btn-default">Home</button></a>
+  <a href=Aboutus  button type="button" class="btn btn-success">AboutUs</button></a>
+  <a href=brand button type="button" class="btn btn-success">Brands</button></a>
+  <a href=login  button type="button" class="btn btn-warning">Login</button></a>
+  <a href=signup button type="button" class="btn btn-danger">SignUp</button></a>
+  <a href=cart  button type="button" class="btn btn-link">Cart</button></a></center>
+ 
+ <center> <h2>Registration</h2></center>
   <form class="form-horizontal" role="form">
     <div class="form-group">
       <label class="control-label col-sm-2" for="Name">Name:</label>
@@ -55,13 +55,13 @@
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
         <div class="checkbox">
-          <label><input type="checkbox"> Remember me</label>
+     <center><label><input type="checkbox"> Remember me</label></center>
         </div>
       </div>
     </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default">Submit</button></center>
+ <center><button type="submit" class="btn btn-default">Submit</button></center>
       </div>
     </div>
   </form>

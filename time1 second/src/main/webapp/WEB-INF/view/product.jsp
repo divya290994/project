@@ -114,7 +114,7 @@
 	</form:form>
 	<br>
 	<h3>Product List</h3>
-	<c:if test="${!empty productList}">
+	<c:if test="${!empty productlist}">
 		<table class="tg">
 			<tr>
 				<th width="80">Product ID</th>
@@ -126,7 +126,7 @@
 				<th width="60">Edit</th>
 				<th width="60">Delete</th>
 			</tr>
-			<c:forEach items="${productList}" var="product">
+			<c:forEach items="${list}" var="product">
 				<tr>
 					<td>${product.id}</td>
 					<td>${product.name}</td>

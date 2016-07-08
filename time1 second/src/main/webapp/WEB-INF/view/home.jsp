@@ -23,25 +23,32 @@
 }</style>
 <div class="jumbotron text-center">
 
+Hello ${sessionScope.user}
 <h1>THE WATCH WORLD</h1> 
 
- <p>Time Makes a Man Perfect</p> 
+ <p>Time Makes a Man Perfect</p>
+<center> <form method="get" name="searchform" action="http://www.google.com/search" target="_blank">
+    <input type="hidden" name="sitesearch" value="stackoverflow.com">
+    <input type="text" name="as_q" size="20" value="Search stackoverflow.com">
+    <input type="submit" value="Search" title="Search">
+</form> </center> 
 </div>
-
 <center>
 
-<a href="home" class="btn btn-default">Home</a>
-<a href="login" class="btn btn-default">Login</a>
-<a href="Aboutus" class="btn btn-default">About us</a>
-<a href="signup" class="btn btn-default">Signup</a>
-<a href="brand" class="btn btn-default">Brand</a>
-<a href="admin" class="btn btn-default">Admin</a>
-
-
+<a href=home  button type="button" class="btn btn-default">Home</button></a>
+  <a href=Aboutus  button type="button" class="btn btn-success">AboutUs</button></a>
+  <a href=brand  button type="button" class="btn btn-success">Brands</button></a>
+  <a href=login  button type="button" class="btn btn-warning">Login</button></a>
+  <a href=signup  button type="button" class="btn btn-danger">SignUp</button></a>
+  <a href=cart  button type="button" class="btn btn-link">Cart</button></a>
+   <a href=admin  button type="button" class="btn btn-danger">Admin</button></a>
+</center>
  
 
-  <button type="button" class="btn btn-link">Cart</button></center> 
-  <h2>Fastrack New Collections</h2>
+
+  
+  
+  <h2>Watch Collections</h2>
   
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -81,5 +88,50 @@
   </a>
   </div>
   </div>
+  
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Help</h3>
+      <p>Payments</p>
+      <p>Saved Cards</p>
+      <p>Shipping</p>
+      <p>Cancellation&Returns</p>
+      <p>Payments</p>
+      
+    </div>
+    <div class="col-sm-3">
+      <h3>Watch World</h3>
+      <p>Contact Us</p>
+      <p>About Us</p>
+      <p>Careers</p>
+      <p>About Watches</p>
+      <p>Offers</p>
+    </div>
+    <div class="col-sm-3">
+      <h3>MISC</h3>
+      <p>Online Shopping</p>
+      <p>Affliated Programs</p>
+      <p>Gift Cards</p>
+      <p>Vouchers</p>
+      <p>First Subscription</p>
+    </div>
+    
+    <div class="col-sm-3">
+      <h3>Familiar Brands</h3>
+      <p>Titan</p>
+      <p>Sonata</p>
+      <p>Flipkart</p>
+      <p>Water proofs</p>
+      <p>Digital Types</p>
+    </div>
+    
+      </div>
+</div>
+
+
+
+</div>
+  
 </body>
 </html>

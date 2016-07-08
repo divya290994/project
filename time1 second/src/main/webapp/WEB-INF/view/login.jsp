@@ -14,29 +14,101 @@
 </head>
 <body>
 
-<center><a href="home" class="btn btn-default">Home</a>
-<a href="login" class="btn btn-default">Login</a>
-<a href="Aboutus" class="btn btn-default">About us</a>
-<a href="signup" class="btn btn-default">Signup</a>
-<a href="brand" class="btn btn-default">Brand</a>
-<a href="cart" class="btn btn-default">cart</a>
 
- <div class="container">
- <h2>Login Page</h2>
-  <form class="form-horizontal" role="form" action="isvalidUser" method="POST">
-    <div class="form-group">
-      <label for="name">userID</label>
-      <input type="text" class="form-control" name="name" placeholder="Enter userID">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" name="password" placeholder="Enter password">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
+	<center> <a href=home  button type="button" class="btn btn-default">Home</button></a>
+  <a href=Aboutus  button type="button" class="btn btn-success">AboutUs</button></a>
+  <a href=brand  button type="button" class="btn btn-success">Brands</button></a>
+  <a href=login  button type="button" class="btn btn-warning">Login</button></a>
+  <a href=signup  button type="button" class="btn btn-danger">SignUp</button></a>
+  <a href=cart button type="button" class="btn btn-link">Cart</button></a></center>
+ 
+         
+ <style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+
+<center><h2>Login Form</h2></center>
+
+<form action="action_page.php">
+  <div class="imgcontainer">
+    <img src="resource/img3/avatar.jpg" alt="Avatar" class="avatar"width="50" height="110">
+  </div>
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
 </body>
 </html>
+
