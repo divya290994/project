@@ -41,14 +41,14 @@ public class CategoryDAOImpl implements CategoryDAO {
 	}
 
 	@Transactional
-	public void delete(String id) {
+	public void delete(int id) {
 		Category CategoryToDelete = new Category();
 		CategoryToDelete.setId(id);
 		sessionFactory.getCurrentSession().delete(CategoryToDelete);
 	}
 
 	@Transactional
-	public Category get(String id) {
+	public Category get(int id) {
 		String hql = "from Category where id=" + "'"+ id +"'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		
@@ -78,12 +78,15 @@ public class CategoryDAOImpl implements CategoryDAO {
 		return null;
 	}
 
-	public List<Category> getAllCategories() {
+	public Category getByDescription(String description) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	
+	public List<Category> getAllCategorys() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 
 }

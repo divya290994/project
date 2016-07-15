@@ -6,17 +6,32 @@
 
 <%@ page isELIgnored="false"%>
 <%@ page session="false"%>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 <title>PRODUCT LIST</title>
 </head>
+<script>
+function myFunction() {
+    var txt;
+    var r = confirm("Press a button!\nEither OK or Cancel.\nThe button you pressed will be displayed in the result window.");
+    if (r == true) {
+        txt = "You pressed OK!";
+    } else {
+        txt = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
 <body>
 
+	<body>
+${message}
 	
 	
-	${message}
 <center>	<h1>Add a Product</h1>
 
 	<c:url var="addAction" value="/productlist/add"></c:url>
@@ -45,19 +60,8 @@
 				<td><form:input path="name" required="true" /></td>
 			</tr>
 			
-			<td><form:label path="description">
-						<spring:message text="Description" />
-					</form:label></td>
-				<td><form:input path="description" required="true" /></td>
-			</tr>
 			
-			
-				<td><form:label path="price">
-						<spring:message text="Price" />
-					</form:label></td>
-				<td><form:input path="price" required="true" /></td>
-			</tr>
-			
+	
 			<tr>
 				<td colspan="2"><c:if test="${!empty product.name}">
 						<input type="submit"
@@ -65,19 +69,17 @@
 					</c:if> <c:if test="${empty product.name}">
 						<input type="submit" value="<spring:message text="Add Product"/>" />
 					</c:if></td>
-			</tr></center>
+			</tr>
 		</table>
 	</form:form>
 	<br>
-
-	
-	<p>GET ALL PRODUCTS</p>
+<p>PRODUCT LIST</p>
 
 <div class="row">
 			<div class="col-md-6">
 
 
-				<table class="table table-bordered">
+				<table border="1">
 					<thead>
 						<tr>
 						    <th>SI NO</th>
@@ -85,7 +87,7 @@
 							<th>Name</th>
 							<th>Description</th>
 							<th>Price</th>
-					
+							
 						</tr>
 					</thead>
 					<tbody>
@@ -96,11 +98,13 @@
 			<td>${product.id}</td>
 			<td>${product.name}</td>
 			<td>${product.description}</td>
-			<td>${product.price}</td>
+			
 		
-			<td><a href="<c:url value='productlist/edit/${product.id}' />">Edit</a></td>
-			<td><a href="<c:url value='productlist/remove/${product.id}' />">Delete</a></td>
-						</tr>
+		
+			<td><a href="<c:url value='productlist/edit/${product.id}' />"><button>Edit</button></a></td>
+			<td><a href="<c:url value='productlist/remove/${product.id}' />">
+			<button onclick="myFunction()">Delete</button></a></td>
+						</tr> </center>
 					 </c:forEach>  
 					</tbody>
 					
@@ -109,9 +113,7 @@
 	
 	
 	</div>
-	</div>
-	</div>
-</div>
 
-	</body>
-	</html>
+
+</body>
+</html>

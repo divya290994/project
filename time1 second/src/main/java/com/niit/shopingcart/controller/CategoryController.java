@@ -27,15 +27,13 @@ return "categorylist";
 
 
 @RequestMapping(value="/categorylist/add", method = RequestMethod.POST)
-
 public String addCategory(@ModelAttribute("category") Category category){
 categorydao.saveOrUpdate(category);
 return "redirect:/categorylist";
-
 }
 
 @RequestMapping("categorylist/remove/{id}")
-public String removeCategory(@PathVariable("id") String id,ModelMap model) throws Exception{
+public String removeCategory(@PathVariable("id") int id,ModelMap model) throws Exception{
 
 try {
 categorydao.delete(id);
@@ -49,7 +47,7 @@ return "redirect:/categorylist";
 }
 
 @RequestMapping("categorylist/edit/{id}")
-public String editCategory(@PathVariable("id") String id, Model model){
+public String editCategory(@PathVariable("id") int id, Model model){
 System.out.println("editCategory");
 model.addAttribute("category", this.categorydao.get(id));
 model.addAttribute("listCategorys", this.categorydao.list());

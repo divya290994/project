@@ -11,8 +11,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 import com.niit.shopingcart.modal.Product;
+import com.niit.shopingcart.modal.Supplier;
 
-@Repository("productDAO")
+@Repository("ProductDAO")
 public class ProductDAOImpl implements ProductDAO {
 	
 
@@ -28,8 +29,7 @@ public class ProductDAOImpl implements ProductDAO {
 	public List<Product> list() {
 		
 		@SuppressWarnings("unchecked")
-		List<Product> listProduct = (List<Product>) 
-		          sessionFactory.getCurrentSession()
+		List<Product> listProduct = (List<Product>) sessionFactory.getCurrentSession()
 				.createCriteria(Product.class)
 				.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 
@@ -42,15 +42,15 @@ public class ProductDAOImpl implements ProductDAO {
 	}
 
 	@Transactional
-	public void delete(String id) {
+	public void delete(int id) {
 		Product ProductToDelete = new Product();
 		ProductToDelete.setId(id);
 		sessionFactory.getCurrentSession().delete(ProductToDelete);
 	}
 
 	@Transactional
-	public Product get(String id) {
-		String hql = "from Category where id=" + "'"+ id +"'";
+	public Product get(int id) {
+		String hql = "from Product where id=" + "'"+ id +"'";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		
 		@SuppressWarnings("unchecked")
@@ -79,12 +79,13 @@ public class ProductDAOImpl implements ProductDAO {
 		return null;
 	}
 
+	
+
 	public List<Product> getAllProducts() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	
-
 
 }

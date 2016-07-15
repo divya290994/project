@@ -30,7 +30,7 @@
 			<div class="col-md-4">
 
 				<center>
-					<a href="product?id=w1" class="thumbnail"> <img
+					<a href="product1?id=w1" class="thumbnail"> <img
 						src="resource/img3/ig6.jpg" alt="watch" style="width: 250px; height: 250px"></a>
 					<p>Attractive watches</p>
 					<p>Rs.899/-</p>
@@ -40,7 +40,7 @@
 
 			<div class="col-md-4">
 				<center>
-					<a href="product?id=w2" class="thumbnail"> <img
+					<a href="product1?id=w2" class="thumbnail"> <img
 						src="resource/img3/img10.jpg" alt="watches"
 						style="width: 250px; height: 250px"></a>
 					<p>fastrack</p>
@@ -51,7 +51,7 @@
 
 			<div class="col-md-4">
 				<center>
-					<a href="product?id=w3"class="thumbnail"> <img
+					<a href="product1?id=w3"class="thumbnail"> <img
 						src="resource/img3/img11.jpg" alt="watch"
 						style="width: 250px; height: 250px"></a>
 					<p>sonata</p>
@@ -68,10 +68,10 @@
 					<div class="col-md-4">
 
 						<center>
-							<a href="product?id=w1" class="thumbnail"> <img
-								src="resource/img3/b2.jpg" alt="watch"
+							<a href="product1?id=w1" class="thumbnail"> <img
+								src="resource/img3/flower.jpg" alt="watch"
 								style="width: 250px; height: 250px"></a>
-							<p>Slippers</p>
+							<p>Watches</p>
 							<p>Rs.899/-</p>
 						</center>
 					</div>
@@ -79,10 +79,10 @@
 					<div class="row">
 						<div class="col-md-4">
 							<center>
-								<a href="product?id=w1" class="thumbnail"> <img
-									src="resource/img3/divi1.jpg" alt="watch"
+								<a href="product1?id=w1" class="thumbnail"> <img
+									src="resource/img3/flower1.jpg" alt="watch"
 									style="width: 250px; height: 250px"></a>
-								<p>Bedsheets</p>
+								<p>Watches</p>
 								<p>Rs.899/-</p>
 							</center>
 						</div>
@@ -91,8 +91,8 @@
 							<div class="col-md-4">
 
 								<center>
-									<a href="product?id=w1" class="thumbnail"> <img
-										src="resource/img3/brand4.jpg" alt="watch"
+									<a href="product1?id=w1" class="thumbnail"> <img
+										src="resource/img3/flower2.jpg" alt="watch"
 										style="width: 250px; height: 250px"></a>
 									<p>watches</p>
 									<p>Rs.899/-</p>
@@ -107,7 +107,7 @@
 									<div class="col-md-4">
 
 										<center>
-											<a href="product?id=w1" class="thumbnail"> <img
+											<a href="product1?id=w1" class="thumbnail"> <img
 												src="resource/img3/priya2.jpg" alt="watch"
 												style="width: 250px; height: 250px"></a>
 											<p>watches</p>
@@ -120,7 +120,7 @@
 										<div class="col-md-4">
 
 											<center>
-												<a href="product?id=w1" class="thumbnail"> <img
+												<a href="product1?id=w1" class="thumbnail"> <img
 													src="resource/img3/priya3.jpg" alt="watch"
 													style="width: 250px; height: 250px"></a>
 												<p>watches</p>
@@ -133,7 +133,7 @@
 											<div class="col-md-4">
 
 												<center>
-													<a href="product?id=w1" class="thumbnail"> <img
+													<a href="product1?id=w1" class="thumbnail"> <img
 														src="resource/img3/water1.jpg" alt="watch"
 														style="width: 250px; height: 250px"></a>
 													<p>watches</p>

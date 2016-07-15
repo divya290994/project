@@ -1,28 +1,27 @@
 package com.niit.shopingcart.dao;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
-
 import com.niit.shopingcart.modal.Category;
-
-
+import com.niit.shopingcart.modal.Supplier;
 
 public interface CategoryDAO {
 
 
 	public List<Category> list();
 
-	public Category get(String id);
+	public Category get(int id);
 	
 	public Category getByName(String name);
+	
+	public Category getByDescription(String description);
 
 	public void saveOrUpdate(Category category);
 
-	public void delete(String id);
+	public void delete(int id);
+	
+	public List<Category> getAllCategorys();
+	
 
-	public List<Category> getAllCategories();
-
-
+	
 }

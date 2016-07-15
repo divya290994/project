@@ -8,16 +8,33 @@
 <%@ page isELIgnored="false"%>
 <%@ page session="false"%>
 
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Categories</title>
 </head>
+<script>
+function myFunction() {
+    var txt;
+    var r = confirm("Are You Sure You Want To Delete This!!");
+    if (r == true) {
+        txt = "You pressed OK!";
+    } else {
+        txt = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
 <body>
 
 
 	${message}
-<center>	<h1>Add a Category</h1>
+<center>
+
+	<h2 style="color:blue;">Add a Category</h2>
 
 	<c:url var="addAction" value="/categorylist/add"></c:url>
 
@@ -63,13 +80,13 @@
 	<br>
 
 	
-	<p>GET ALL CATEGORIES</p>
+	<p style="color:violet;">GET ALL CATEGORIES</p>
 
 <div class="row">
 			<div class="col-md-6">
 
 
-				<table class="table table-bordered">
+				<table border="1">
 					<thead>
 						<tr>
 						    <th>SI NO</th>
@@ -86,9 +103,11 @@
 			<td>${category.id}</td>
 			<td>${category.name}</td>
 			<td>${category.description}</td>
-			<td><a href="<c:url value='categorylist/edit/${category.id}' />">Edit</a></td>
-			<td><a href="<c:url value='categorylist/remove/${category.id}' />">Delete</a></td>
-						</tr></center>
+			<td><a href="<c:url value='categorylist/edit/${category.id}' />"><button>Edit</button></a></td>
+			<td><a href="<c:url value='categorylist/remove/${category.id}' />">
+			<button onclick="myFunction()">Delete</button></a></td>
+						</tr>
+						</center>
 					 </c:forEach>  
 					</tbody>
 					

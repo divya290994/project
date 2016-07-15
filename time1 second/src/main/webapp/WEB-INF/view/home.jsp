@@ -23,11 +23,11 @@
 }</style>
 <div class="jumbotron text-center">
 
-Hello ${sessionScope.user}
+Hello ${user}
 <h1>THE WATCH WORLD</h1> 
 
  <p>Time Makes a Man Perfect</p>
-<center> <form method="get" name="searchform" action="http://www.google.com/search" target="_blank">
+<center> <form method="get" name="searchform" action="http://localhost:8080/time1" target="_blank">
     <input type="hidden" name="sitesearch" value="stackoverflow.com">
     <input type="text" name="as_q" size="20" value="Search stackoverflow.com">
     <input type="submit" value="Search" title="Search">

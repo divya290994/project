@@ -40,19 +40,19 @@ Welcome in the page:</br>
     <td>Watch_003</td>
   </tr>
   <tr>
-    <td>Bat4</td>
-    <td>Slippers</td>
-    <td>Slipp_004</td>
+    <td>WAT4</td>
+    <td>Watches</td>
+    <td>Wat_004</td>
   </tr>
   <tr>
-    <td>Bed5</td>
-    <td>BedSheets</td>
-    <td>Sheet_005</td>
+    <td>WAT5</td>
+    <td>Watches</td>
+    <td>Wat_005</td>
   </tr>
    <tr>
-    <td>Kaj6</td>
-    <td>Kajal</td>
-    <td>Kajal_006</td>
+    <td>WAT6</td>
+    <td>Watches</td>
+    <td>Wat_006</td>
   </tr>
    <tr>
     <td>Wat7</td>
@@ -69,19 +69,6 @@ Welcome in the page:</br>
     <td>Watch</td>
     <td>Watch_009</td>
   </tr>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
-
-
-</div>
+  </div>
 </body>
 </html>

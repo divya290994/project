@@ -12,21 +12,25 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.niit.shopingcart.dao.CategoryDAO;
 import com.niit.shopingcart.dao.ProductDAO;
+import com.niit.shopingcart.dao.SupplierDAO;
+import com.niit.shopingcart.modal.Category;
 import com.niit.shopingcart.modal.Product;
+import com.niit.shopingcart.modal.Supplier;
 
 
 
 @Controller
-public class ProductController{
-
-@Autowired
+public class ProductController {
+	
+	@Autowired
 	private ProductDAO productdao;
 
 
 @RequestMapping(value = "/productlist", method = RequestMethod.GET)
-public String listProduct(Model model) {
-model.addAttribute("product", new Product());
+public String listproducts(Model model) {
+model.addAttribute("product", new Supplier());
 model.addAttribute("productlist", this.productdao.list());
 return "productlist";
 }
@@ -41,7 +45,7 @@ return "redirect:/productlist";
 }
 
 @RequestMapping("productlist/remove/{id}")
-public String removeProduct(@PathVariable("id") String id,ModelMap model) throws Exception{
+public String removeProduct(@PathVariable("id") int id,ModelMap model) throws Exception{
 
 try {
 productdao.delete(id);
@@ -55,11 +59,19 @@ return "redirect:/productlist";
 }
 
 @RequestMapping("productlist/edit/{id}")
-public String editProduct(@PathVariable("id") String id, Model model){
-System.out.println("edit");
+public String editProduct(@PathVariable("id") int id, Model model){
+System.out.println("editProduct");
 model.addAttribute("product", this.productdao.get(id));
-model.addAttribute("listProduct", this.productdao.list());
+model.addAttribute("listProducts", this.productdao.list());
 return "productlist";
 
 }
 }
+
+
+
+
+
+
+
+

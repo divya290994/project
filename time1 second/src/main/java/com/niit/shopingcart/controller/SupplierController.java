@@ -41,7 +41,7 @@ return "redirect:/supplierlist";
 }
 
 @RequestMapping("supplierlist/remove/{id}")
-public String removeSupplier(@PathVariable("id") String id,ModelMap model) throws Exception{
+public String removeSupplier(@PathVariable("id") int id,ModelMap model) throws Exception{
 
 try {
 supplierdao.delete(id);
@@ -55,7 +55,7 @@ return "redirect:/supplierlist";
 }
 
 @RequestMapping("supplierlist/edit/{id}")
-public String editSupplier(@PathVariable("id") String id, Model model){
+public String editSupplier(@PathVariable("id") int id, Model model){
 System.out.println("editSupplier");
 model.addAttribute("supplier", this.supplierdao.get(id));
 model.addAttribute("listSuppliers", this.supplierdao.list());

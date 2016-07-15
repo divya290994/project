@@ -9,8 +9,12 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
+
+
 </head>
-<body>
+<body >
 
 
 
@@ -28,152 +32,53 @@
   </div>
 </nav>
 
-<div class="container">
-  <h3>About Categories</h3>
+
+
+
+  </style>
+</head>
+<body>
+
+
+
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="signup">Signup</a></p>
+      <p><a href="brand">Brands</a></p>
+      <p><a href="login">Login</a></p>
+    </div>
+    <div class="col-sm-8 text-left">
+      <h1>How watches makes you perfect!</h1>
+      <p>Phones dont keep you punctual but watches makes you as a punctual.
+      A wrist watches more convenient way to tell the time.
+      Ant item inspired by the military has a functional use.
+      The best watches dont use the latest technology.
+      An watches not only tell the time but also it tells about the relationships.</p>
+      
+        <h1>Lincoln says about watch!</h1>
+        <p>
+        Many say that is due to the fact that lincoln died at that time and so the watches show 10:10,But some say that,lincoln was shot at night at around 10:15 and died the next day morning around 7.22.so this isn't correct reason
+
  
-  <div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>SNO</th>
-        <th>Category Name</th>
-        <th>Description</th>
-       
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Digital Watches</td>
-        <td>1 Year Warranty</td>
-        </tr>
-   
-    <tr>
-        <td>2</td>
-        <td>Analog Watches</td>
-        <td>2 Year Warranty</td>
-        </tr>
-   
-    <tr>
-        <td>3</td>
-        <td>Water Proof Watches</td>
-        <td>Starts at Rs.500/-</td>
-        </tr>
-        
-         
-    <tr>
-        <td>4</td>
-        <td>Kids Special</td>
-        <td>Starts at Rs.200/-</td>
-        </tr>
-        
-         <tr>
-        <td>5</td>
-        <td>Ladys Special</td>
-        <td>Starts at Rs.150/-</td>
-        </tr>
-   </tbody>
-  </table>
+ 
+     
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>Watch makes punctual</p>
+      </div>
+      <div class="well">
+        <p>Wrist Watches makes beauty</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="container">
-  <h3>About Suppliers</h3>
- 
-  <div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>SNO</th>
-        <th>Supplying Shops</th>
-        <th>Description</th>
-       
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Titan Shop</td>
-        <td>Titan Varieties</td>
-        </tr>
-   
-    <tr>
-        <td>2</td>
-        <td>Kids World</td>
-        <td>Kids collections</td>
-        </tr>
-   
-    <tr>
-        <td>3</td>
-        <td>Singapore Shopping</td>
-        <td>All Varieties</td>
-        </tr>
-        
-         
-    <tr>
-        <td>4</td>
-        <td>Dizee Shop</td>
-        <td>All Varieties</td>
-        </tr>
-        
-         <tr>
-        <td>5</td>
-        <td>Watch Shop </td>
-        <td>Ladys Specials</td>
-        </tr>
- </tbody>
-  </table>
-  </div>
-</div>
-
-<div class="container">
-  <h3>About product</h3>
- 
-  <div class="table-responsive">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>SNO</th>
-        <th>Available Products</th>
-        <th>Description</th>
-       
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Titan</td>
-        <td>Titan Varieties</td>
-        </tr>
-   
-    <tr>
-        <td>2</td>
-        <td>Fastrack</td>
-        <td>Kids collections</td>
-        </tr>
-   
-    <tr>
-        <td>3</td>
-        <td>Sonata</td>
-        <td>LadysVarieties</td>
-        </tr>
-        
-         
-    <tr>
-        <td>4</td>
-        <td>Timex</td>
-        <td>All Varieties</td>
-        </tr>
-        
-         <tr>
-        <td>5</td>
-        <td>Fossil</td>
-        <td>Ladys Specials</td>
-        </tr>
- </tbody>
-  </table>
-  </div>
-</div>
 
 
 

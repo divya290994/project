@@ -1,9 +1,11 @@
 package com.niit.time1.controller;
 
 
+import org.h2.engine.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
+
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -11,15 +13,13 @@ import org.springframework.web.servlet.ModelAndView;
 import com.niit.shopingcart.dao.CategoryDAO;
 import com.niit.shopingcart.dao.UserDAO;
 
-
-import com.niit.shopingcart.dao.UserDAO;
-
-
 @Controller
 public class logincontroller {
 	
+	
 	@Autowired
 	UserDAO obj2;
+	
 	@RequestMapping("/isvalidUser")
 	public ModelAndView showmessage(@RequestParam(value="name")String name,
 			@RequestParam(value="password")String password){
@@ -49,6 +49,7 @@ public class logincontroller {
 	public String gotohome() {
 		return "home";
 	}
+	
 	@RequestMapping("/Aboutus")
 	public String gotoAboutus() {
 		return "Aboutus";
@@ -62,17 +63,38 @@ public class logincontroller {
 		return "signup";
 	}
 	@RequestMapping("/login")
-	public String login() {
+	public String gotologin() {
 		return "login";
 	}
 	
 	@RequestMapping("/admin")
-	public String categoryList() {
+	public String categorylist() {
 		return "admin";
+	}
+	
+
+	@RequestMapping("/product1")
+	public String brand() {
+		return "product1";
+	}
+	
+
+	@RequestMapping("/cart")
+	public String home() {
+		return "cart";
+	}
+	
+	@RequestMapping("/upload")
+	public String gotoupload() {
+		return "upload";
 	}
 	
 	
 	
+	
+	
+	
+
 
 }
 

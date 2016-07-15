@@ -77,7 +77,7 @@ public class ApplicationContextConfig {
     
     @Autowired
     @Bean(name = "categoryDAO")
-    public CategoryDAO getCategoryDao(SessionFactory sessionFactory) {
+    public CategoryDAO getCategoryDAO(SessionFactory sessionFactory) {
     	return new CategoryDAOImpl(sessionFactory);
     }
     
@@ -89,7 +89,7 @@ public class ApplicationContextConfig {
     }
     
     @Autowired
-    @Bean(name = "productDAO")
+    @Bean(name = "ProductDAO")
     public ProductDAO getProductDAO(SessionFactory sessionFactory) {
     	return new ProductDAOImpl(sessionFactory);
     }

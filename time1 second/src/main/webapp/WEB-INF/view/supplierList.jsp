@@ -14,6 +14,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Suppliers</title>
 </head>
+
+<script>
+function myFunction() {
+    var txt;
+    var r = confirm("Press a button!\nEither OK or Cancel.\nThe button you pressed will be displayed in the result window.");
+    if (r == true) {
+        txt = "You pressed OK!";
+    } else {
+        txt = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
 <body>
 ${message}
 	
@@ -70,7 +83,7 @@ ${message}
 			<div class="col-md-6">
 
 
-				<table class="table table-bordered">
+				<table border="1">
 					<thead>
 						<tr>
 						    <th>SI NO</th>
@@ -89,9 +102,9 @@ ${message}
 			<td>${supplier.name}</td>
 			<td>${supplier.address}</td>
 		
-			
-			<td><a href="<c:url value='supplierlist/edit/${supplier.id}' />">Edit</a></td>
-			<td><a href="<c:url value='supplierlist/remove/${supplier.id}' />">Delete</a></td>
+			<td><a href="<c:url value='supplierlist/edit/${supplier.id}' />"><button>Edit</button></a></td>
+			<td><a href="<c:url value='supplierlist/remove/${supplier.id}' />">
+			<button onclick="myFunction()">Delete</button></a></td>
 						</tr> </center>
 					 </c:forEach>  
 					</tbody>

@@ -6,6 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.niit.shopingcart.dao.CategoryDAO;
 import com.niit.shopingcart.modal.Category;
+import com.niit.shopingcart.modal.Supplier;
 
 public class CategoryTest {
 	
@@ -20,16 +21,34 @@ public class CategoryTest {
 		
 	Category c =(Category)	  context.getBean("category");
 	
+	
 	CategoryDAO categoryDAO = (CategoryDAO)  context.getBean("categoryDAO");
 	
 	
-	c.setId("TAB_003");
-	c.setName("Tablet");
-	c.setDescription("Tablet product");
+	
+	//c.setId("PD_001");
+		c.setName("Titan");
+		c.setDescription("xyz");
+		
+		
+		
+		//c.setId("PD_002");
+		c.setName("Fossil");
+		c.setDescription("cba");
+		
+		
+		//c.setId("PD_003");
+		c.setName("Sonata");
+		c.setDescription("WaterProof");
+		
+		
+		
+	
+		categoryDAO.saveOrUpdate(c);
 	
 	
-	categoryDAO.saveOrUpdate(c);
-	List<Category>  list =    categoryDAO.list();
+	
+	List<Category>  list =categoryDAO.list();
 	
 	for(Category cat : list)
 	{

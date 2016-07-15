@@ -27,9 +27,18 @@ public class SupplierTest {
 	
 	
 
-	s.setId("SUP_001");
+	//s.setId("SUP_001");
 	s.setName("Titan shop");
 	s.setAddress("xyz");
+	
+	//s.setId("SUP_002");
+	s.setName("Fastrack shop");
+	s.setAddress("zyx");
+	
+
+	//s.setId("SUP_003");
+	s.setName("Sonata shop");
+	s.setAddress("abc");
 	
 	
 	supplierDAO.saveOrUpdate(s);
