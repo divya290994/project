@@ -87,7 +87,15 @@ public class logincontroller {
 	@RequestMapping("/upload")
 	public String gotoupload() {
 		return "upload";
-	}
+	} 
+	@RequestMapping("/index")
+	public String gotoindex() {
+		return "index";
+	} 
+	@RequestMapping("/memberDetails")
+	public String gotomemberDetails() {
+		return "memberDetails";
+	} 
 	
 	
 	

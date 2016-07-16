@@ -60,6 +60,13 @@ ${message}
 				<td><form:input path="name" required="true" /></td>
 			</tr>
 			
+			<tr>
+				<td><form:label path="description">
+						<spring:message text="Description" />
+					</form:label></td>
+				<td><form:input path="description" required="true" /></td>
+			</tr>
+			<tr>
 			
 	
 			<tr>

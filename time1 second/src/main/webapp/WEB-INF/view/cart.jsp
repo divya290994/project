@@ -27,7 +27,7 @@
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CAT_002 <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="product">pd_001</a></li>
-          <li><a href="#">pd_002</a></li>
+          <li><a href="index">pd_002</a></li>
           <li><a href="#">pd_003</a></li>
         </ul>
       </li>
