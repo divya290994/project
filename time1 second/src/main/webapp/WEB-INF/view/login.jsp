@@ -5,9 +5,23 @@
 <html>
 <head>
 
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+
+</script>
+
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>login</title>
+
+
 
 
 
@@ -117,12 +131,16 @@ span.psw {
 
 		<div class="container">
 			<label><b>Username</b></label> <input type="text"
-				placeholder="Enter Username" name="uname" required> <label><b>Password</b></label>
+				placeholder="Enter Username" name="uname" required> 
+				
+				<br>
+				
+				<label><b>Password</b></label>
 			<input type="password" placeholder="Enter Password" name="psw"
 				required>
 
 			<button type="submit">Login</button>
-			<input type="checkbox" checked="checked"> Remember me
+			
 		</div>
 
 		<div class="container" style="background-color: #f1f1f1">

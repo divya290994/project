@@ -2,8 +2,10 @@ package com.niit.time1.bean;
 
 import java.io.Serializable;
 
+
 @SuppressWarnings("serial")
 public class UserDetails implements Serializable {
+	
 	
 
 	

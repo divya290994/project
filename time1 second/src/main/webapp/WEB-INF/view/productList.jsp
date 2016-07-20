@@ -60,15 +60,7 @@ ${message}
 				<td><form:input path="name" required="true" /></td>
 			</tr>
 			
-			<tr>
-				<td><form:label path="description">
-						<spring:message text="Description" />
-					</form:label></td>
-				<td><form:input path="description" required="true" /></td>
-			</tr>
-			<tr>
 			
-	
 			<tr>
 				<td colspan="2"><c:if test="${!empty product.name}">
 						<input type="submit"
@@ -92,9 +84,7 @@ ${message}
 						    <th>SI NO</th>
 							<th>ID</th>
 							<th>Name</th>
-							<th>Description</th>
-							<th>Price</th>
-							
+					      
 						</tr>
 					</thead>
 					<tbody>
@@ -104,7 +94,7 @@ ${message}
 			<td>${status.count}</td>
 			<td>${product.id}</td>
 			<td>${product.name}</td>
-			<td>${product.description}</td>
+	
 			
 		
 		

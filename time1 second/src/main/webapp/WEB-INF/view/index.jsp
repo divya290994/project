@@ -14,7 +14,7 @@
 			<h1> <center>  Shopping Cart  </center></h1>
 			<hr color="blue" height="5">
  
-			<a href="memberDetails" style="margin: 50;">Register here</a>
+			<a href="memberShip.obj" style="margin: 50;">Register here</a>
 		
 	</div>
 </body>

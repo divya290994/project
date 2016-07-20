@@ -17,14 +17,13 @@
 </head>
 <script>
 function myFunction() {
-    var txt;
-    var r = confirm("Are You Sure You Want To Delete This!!");
-    if (r == true) {
-        txt = "You pressed OK!";
+    var x;
+    if (confirm("Are You Sure Want to Delete!") == true) {
+        x = "You pressed OK!";
     } else {
-        txt = "You pressed Cancel!";
+        x = "You pressed Cancel!";
     }
-    document.getElementById("demo").innerHTML = txt;
+    document.getElementById("demo").innerHTML = x;
 }
 </script>
 

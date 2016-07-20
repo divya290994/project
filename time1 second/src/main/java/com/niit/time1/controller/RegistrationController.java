@@ -8,6 +8,6 @@ public class RegistrationController {
 
 	@RequestMapping("home")
 	public String home(){
-		return "index";
+		return "login";
 	}
 }

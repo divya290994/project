@@ -21,16 +21,16 @@
 			<tr>
 				<th width="80"> ID</th>
 				<th width="120"> Name</th>
-				<th width="120"> Description</th>
-				<th width="120"> Price</th>
+				
 				<th width="60">Edit</th>
 				<th width="60">Delete</th>
 			</tr>
-			<c:forEach items="${list}" var="category">
+			<c:forEach items="${list}" var="product">
 				<tr>
 					<td>${product.id}</td>
 					<td>${product.name}</td>
-					<td>${product.description}</td>
+					
+				
 					</tr>
 			</c:forEach>
 		</table>

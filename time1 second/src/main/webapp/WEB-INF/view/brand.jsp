@@ -15,13 +15,22 @@
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<center> <a href=home button type="button" class="btn btn-default">Home</button></a>
-  <a href=Aboutus  button type="button" class="btn btn-success">AboutUs</button></a>
-  <a href=brand button type="button" class="btn btn-success">Brands</button></a>
-  <a href=login  button type="button" class="btn btn-warning">Login</button></a>
-  <a href=signup  button type="button" class="btn btn-danger">SignUp</button></a>
-  <a href=cart  button type="button" class="btn btn-link">Cart</button></a></center>
-	
+	<center>
+		<a href=home button type="button" class="btn btn-default">Home
+			</button>
+		</a> <a href=Aboutus button type="button" class="btn btn-success">AboutUs
+			</button>
+		</a> <a href=brand button type="button" class="btn btn-success">Brands
+			</button>
+		</a> <a href=login button type="button" class="btn btn-warning">Login
+			</button>
+		</a> <a href=signup button type="button" class="btn btn-danger">SignUp
+			</button>
+		</a> <a href=cart button type="button" class="btn btn-link">Cart
+			</button>
+		</a>
+	</center>
+
 	<div class="container">
 		<h2>Deals of the Day:</h2>
 
@@ -30,8 +39,9 @@
 			<div class="col-md-4">
 
 				<center>
-					<a href="product1?id=w1" class="thumbnail"> <img
-						src="resource/img3/ig6.jpg" alt="watch" style="width: 250px; height: 250px"></a>
+					<a href="productinfo?id=w1" class="thumbnail"> <img
+						src="resource/img3/ig6.jpg" alt="watch"
+						style="width: 250px; height: 250px"></a>
 					<p>Attractive watches</p>
 					<p>Rs.899/-</p>
 				</center>
@@ -51,7 +61,7 @@
 
 			<div class="col-md-4">
 				<center>
-					<a href="product1?id=w3"class="thumbnail"> <img
+					<a href="product1?id=w3" class="thumbnail"> <img
 						src="resource/img3/img11.jpg" alt="watch"
 						style="width: 250px; height: 250px"></a>
 					<p>sonata</p>
