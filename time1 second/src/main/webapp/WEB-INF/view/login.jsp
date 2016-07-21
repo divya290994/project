@@ -14,16 +14,18 @@ function validateForm() {
     }
 }
 
+//function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == null || x == "") {
+        alert("Please give Valid Password");
+        return false;
+    }
 
 </script>
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>login</title>
-
-
-
-
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -128,8 +130,8 @@ span.psw {
 			<img src="resource/img3/avatar.jpg" alt="Avatar" class="avatar"
 				width="50" height="110">
 		</div>
-
-		<div class="container">
+		  
+		  <div class="container">
 			<label><b>Username</b></label> <input type="text"
 				placeholder="Enter Username" name="uname" required> 
 				

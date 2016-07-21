@@ -28,9 +28,9 @@ function myFunction() {
 }
 </script>
 <body>
-${message}
-	
-	
+
+<center><a href="categorylist"> Categories </a>  | <a href="supplierlist"> Suppliers</a> |  <a href="productlist"> Products</a> </center>  
+
 <center>	<h1>Add a Supplier</h1>
 
 	<c:url var="addAction" value="/supplierlist/add"></c:url>

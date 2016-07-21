@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.niit.shopingcart.modal.Category;
+
 import com.niit.shopingcart.modal.Product;
 
 
@@ -84,11 +84,7 @@ public class ProductDAOImpl implements ProductDAO {
 		return null;
 	}
 
-	public Product getByDescription(String description) {
-		// TODO Auto-generated method stub
-		return null;
-		
-	}
+
 	
 
 

@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
 <style>
 .jumbotron {
 	background-color: #f4511e; /* orange */
@@ -142,8 +143,6 @@
 			</div>
 
 		</div>
-	</div>
-
 	</div>
 
 </body>

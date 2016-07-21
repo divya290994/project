@@ -27,11 +27,8 @@ function myFunction() {
 </script>
 
 <body>
+<center><a href="categorylist"> Categories </a>  | <a href="supplierlist"> Suppliers</a> |  <a href="productlist"> Products</a> </center>  
 
-	<body>
-${message}
-	
-	
 <center>	<h1>Add a Product</h1>
 
 	<c:url var="addAction" value="/productlist/add"></c:url>

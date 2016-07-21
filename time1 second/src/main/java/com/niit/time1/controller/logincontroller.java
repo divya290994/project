@@ -116,12 +116,5 @@ public class logincontroller {
 	public String gotouploadMultiple() {
 		return "upload";
 	}
-	
-	@RequestMapping("/productinfo")
-	public String gotoproductinfo() {
-		return "productinfo";
-	}
-	
-	
 
 }

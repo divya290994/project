@@ -39,7 +39,7 @@
 			<div class="col-md-4">
 
 				<center>
-					<a href="productinfo?id=w1" class="thumbnail"> <img
+					<a href="product1?id=w1" class="thumbnail"> <img
 						src="resource/img3/ig6.jpg" alt="watch"
 						style="width: 250px; height: 250px"></a>
 					<p>Attractive watches</p>

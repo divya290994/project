@@ -5,16 +5,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Shopping Cart</title>
+<title>index page</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<div class="content">
 		
-			<h1> <center>  Shopping Cart  </center></h1>
+			<h1> <center>Welcome To Watch World  </center></h1>
 			<hr color="blue" height="5">
  
-			<a href="memberShip.obj" style="margin: 50;">Register here</a>
+			<a href="signup" style="margin: 50;">Register here</a>
 		
 	</div>
 </body>

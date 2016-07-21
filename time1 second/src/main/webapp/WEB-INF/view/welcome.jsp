@@ -10,7 +10,7 @@
 <body>
 	<div class="content">
 		<fieldset>
-			<legend>Shopping Cart Home Page</legend>
+			<legend>welcome page</legend>
 			<!-- here the href's value will be used to decide the 
 					 controller to be executed on click of this link.
 					 here "home" is mapped in spring mvc controller-->

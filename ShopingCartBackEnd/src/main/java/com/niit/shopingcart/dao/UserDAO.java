@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 public class UserDAO{
 	
-		public boolean isvalidUser(String name,String password)
+		public static boolean isvalidUser(String name,String password)
 		{
 			if(name.equals("niit")&&password.equals("niit@123"))
 			{

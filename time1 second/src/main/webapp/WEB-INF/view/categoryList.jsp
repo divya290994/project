@@ -4,10 +4,8 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-
 <%@ page isELIgnored="false"%>
 <%@ page session="false"%>
-
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <html>
@@ -29,8 +27,9 @@ function myFunction() {
 
 <body>
 
+<center><a href="categorylist"> Categories </a>  | <a href="supplierlist"> Suppliers</a> |  <a href="productlist"> Products</a> </center>  
 
-	${message}
+	
 <center>
 
 	<h2 style="color:blue;">Add a Category</h2>
@@ -112,12 +111,8 @@ function myFunction() {
 					
 				</table>
 
-	
-	
 	</div>
 	</div>
-
-
 
 </body>
 </html>

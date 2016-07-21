@@ -42,11 +42,7 @@ public class CategoryTest {
 		c.setDescription("WaterProof");
 		
 		
-		
-	
 		categoryDAO.saveOrUpdate(c);
-	
-	
 	
 	List<Category>  list =categoryDAO.list();
 	
